@@ -4,5 +4,49 @@
     "helloWorld": "Hello World!",
     "@helloWorld": {
         "description": "The conventional newborn programmer greeting"
+    },
+    "notLogin": "you are not login", 
+    "@notLogin": {
+        "description": "inform that the user is not logged in"
+    },
+    "pleaseLogin": "please login first",
+    "@pleaseLogin": {
+        "description": "inform that the user must log in first"
+    }, 
+    "changeLanguage": "Change Language",
+    "@changeLanguage": {
+        "description": "Change Language"
+    }, 
+    "seeDetail": "See Detail",
+    "@seeDetail": {
+        "description": "See Detail"
+    },
+    "notAvaiableRightNow": "not available right now",
+    "@notAvaiableRightNow": {
+        "description": "inform that the feature is not available right now"
+    }, 
+    "myCart": "My Cart",
+    "@myCart": {
+        "description": "My Cart"
+    }, 
+    "auth": "Authentication",
+    "@auth": {
+        "description": "Authentication"
+    }, 
+    "cartIsEmpty": "Cart is empty",
+    "@cartIsEmpty": {   
+        "description": "Cart is empty"
+    },
+    "addToCart": "Add to Cart",
+    "@addToCart": {
+        "description": "Add to Cart"
+    },
+    "successAddToCart": "Success add to cart",
+    "@successAddToCart": {  
+        "description": "Success add to cart"
+    }, 
+    "removeFromCart": "Remove from Cart",
+    "@removeFromCart": {
+        "description": "Remove from Cart"
     }
 }

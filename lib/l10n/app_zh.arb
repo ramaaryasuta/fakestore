@@ -1,5 +1,16 @@
 {
     "@@locale": "zh",
     "language": "中文",
-    "helloWorld": "你好世界!"
+    "helloWorld": "你好世界!", 
+    "notLogin": "你还没有登录",
+    "pleaseLogin": "请先登录", 
+    "changeLanguage": "切换语言", 
+    "seeDetail": "查看详情", 
+    "notAvaiableRightNow": "当前不可用",
+    "myCart": "我的购物车", 
+    "auth": "认证", 
+    "cartIsEmpty": "购物车为空", 
+    "addToCart": "加入购物车",
+    "successAddToCart": "加入购物车成功",
+    "removeFromCart": "移除购物车"
 }

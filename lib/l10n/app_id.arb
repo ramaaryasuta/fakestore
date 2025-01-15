@@ -1,5 +1,16 @@
 {
     "@@locale": "id",
     "language": "Indonesia",
-    "helloWorld": "Hello World!"
+    "helloWorld": "Hello World!", 
+    "notLogin": "anda belum login",
+    "pleaseLogin": "silahkan login terlebih dahulu", 
+    "changeLanguage": "Ubah Bahasa", 
+    "seeDetail": "Lihat Detail", 
+    "notAvaiableRightNow": "tidak tersedia sekarang", 
+    "myCart": "Keranjang Saya", 
+    "auth": "Autentikasi", 
+    "cartIsEmpty": "Keranjang anda masih kosong", 
+    "addToCart": "Tambahkan ke Keranjang",
+    "successAddToCart": "Berhasil menambahkan ke keranjang",
+    "removeFromCart": "Hapus dari Keranjang"
 }

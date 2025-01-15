@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+
+import '../../../cart/cubit/cart_cubit.dart';
+import '../../data/product_model.dart';
 
 class ProductCard extends StatelessWidget {
+  final Product product;
   final String title;
   final String price;
   final String description;
@@ -9,6 +15,7 @@ class ProductCard extends StatelessWidget {
 
   const ProductCard({
     super.key,
+    required this.product,
     required this.title,
     required this.price,
     required this.description,
@@ -78,12 +85,27 @@ class ProductCard extends StatelessWidget {
             width: double.maxFinite,
             padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                context.read<CartCubit>().addToCart(product);
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(
+                    duration: const Duration(seconds: 1),
+                    backgroundColor: Colors.green,
+                    content: Text(
+                      AppLocalizations.of(context)!.successAddToCart,
+                      style: Theme.of(context)
+                          .textTheme
+                          .bodyMedium!
+                          .copyWith(color: Colors.white),
+                    ),
+                  ),
+                );
+              },
               style: ElevatedButton.styleFrom(
                   shape: const RoundedRectangleBorder(
                 borderRadius: BorderRadius.all(Radius.circular(8)),
               )),
-              child: const Text('Add to cart'),
+              child: Text(AppLocalizations.of(context)!.addToCart),
             ),
           )
         ],
